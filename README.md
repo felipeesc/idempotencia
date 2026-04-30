@@ -1,6 +1,6 @@
 # pix-api
 
-API REST em Java para simular transações PIX, com foco em **idempotência** — garantindo que requisições duplicadas não gerem efeitos colaterais.
+API REST em Java para simular transações PIX, com foco em **idempotência**  garantindo que requisições duplicadas não gerem efeitos colaterais.
 
 ## Tecnologias
 
@@ -23,17 +23,17 @@ CREATE USER pix_user WITH PASSWORD 'pix_pass';
 CREATE DATABASE pix_db OWNER pix_user;
 ```
 
-Ou via Docker (reaproveitando um container existente):
+Ou via Docker 
 
 ```bash
-docker exec <container> psql -U <admin_user> -c "CREATE USER pix_user WITH PASSWORD 'pix_pass';"
-docker exec <container> psql -U <admin_user> -c "CREATE DATABASE pix_db OWNER pix_user;"
+ docker exec <container> psql -U <admin_user> -c "CREATE USER pix_user WITH PASSWORD 'pix_pass';"
+ docker exec <container> psql -U <admin_user> -c "CREATE DATABASE pix_db OWNER pix_user;"
 ```
 
 ## Executando
 
 ```bash
-./mvnw spring-boot:run
+ ./mvnw spring-boot:run
 ```
 
 A aplicação sobe em `http://localhost:8080`.
