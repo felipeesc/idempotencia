@@ -33,7 +33,7 @@ Ou via Docker
 ## Executando
 
 ```bash
- ./mvnw spring-boot:run
+ ./mvn spring-boot:run
 ```
 
 A aplicação sobe em `http://localhost:8080`.
