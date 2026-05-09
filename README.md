@@ -51,5 +51,5 @@ As configurações padrão estão em `src/main/resources/application.yml`. Para 
 ## Testes
 
 ```bash
-./mvnw test
+./mvn test
 ```
